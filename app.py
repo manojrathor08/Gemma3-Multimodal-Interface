@@ -2,7 +2,7 @@ import gradio as gr
 from transformers import AutoProcessor, Gemma3ForConditionalGeneration
 from PIL import Image
 import torch
-
+import os
 hf_token = os.environ.get("HF_TOKEN")
 # Disable certain CUDA SDP optimizations (to avoid potential issues)
 torch.backends.cuda.enable_mem_efficient_sdp(False)
