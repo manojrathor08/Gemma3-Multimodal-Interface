@@ -56,7 +56,7 @@ This will launch a Gradio interface accessible at `http://localhost:7860` and al
 
 1. **Caption Mode**:
    - Upload an image
-   - Enter a prompt (e.g., "Describe this image in detail")
+   - Enter a prompt (e.g:  "Describe this image in detail")
    - Select "caption" mode
    - Click "Submit"
 
