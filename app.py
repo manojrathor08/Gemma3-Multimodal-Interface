@@ -3,6 +3,7 @@ from transformers import AutoProcessor, Gemma3ForConditionalGeneration
 from PIL import Image
 import torch
 
+hf_token = os.environ.get("HF_TOKEN")
 # Disable certain CUDA SDP optimizations (to avoid potential issues)
 torch.backends.cuda.enable_mem_efficient_sdp(False)
 torch.backends.cuda.enable_flash_sdp(False)
@@ -10,7 +11,7 @@ torch.backends.cuda.enable_flash_sdp(False)
 # Load the multimodal model and processor
 model_id = "google/gemma-3-4b-it"
 model = Gemma3ForConditionalGeneration.from_pretrained(
-    model_id, device_map="auto"
+    model_id, device_map="auto", use_auth_token=hf_token
 ).eval()
 processor = AutoProcessor.from_pretrained(model_id)
 
