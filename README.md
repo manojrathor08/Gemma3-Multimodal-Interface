@@ -42,7 +42,7 @@ Gemma-3 is Google's latest open multimodal model family that combines powerful v
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/Gemma3-Multimodal-Interface.git
+git clone https://github.com/manojrathor08/Gemma3-Multimodal-Interface.git
 cd Gemma3-Multimodal-Interface
 ```
 
